@@ -1,0 +1,35 @@
+{
+    "name": "mashbo/mashbot-ssh-taskrunner-extension",
+    "description": "Provide tasks to run commands and copy files over SSH",
+    "require": {
+        "mashbo/mashbot-taskrunner": "*@dev",
+        "mashbo/mashbot-process-taskrunner-extension": "*@dev",
+        "phpseclib/phpseclib": "~2.0",
+        "symfony/process": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mashbo\\Mashbot\\Extensions\\SshTaskRunnerExtension\\": "src/",
+            "Mashbo\\Mashbot\\Extensions\\SshTaskRunnerExtension\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adam Quaile",
+            "email": "aquaile@mashbo.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:Mashbo/mashbot-taskrunner.git"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@gitlab.mashbo.com:5339/mashbot/process-taskrunner-extension.git"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "~5.3"
+    }
+}
