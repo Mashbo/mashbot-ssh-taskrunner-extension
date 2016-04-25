@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@gitlab.mashbo.com:5339/mashbot/process-taskrunner-extension.git",
-                "reference": "587b9c07b8886f115e3faf627f54a8b53f1ff933"
+                "reference": "735aab0aad61cf30f21e429d53f5a3184a0cdab0"
             },
             "require": {
                 "mashbo/mashbot-taskrunner": "*@dev",
@@ -38,7 +38,7 @@
                 }
             ],
             "description": "Provide tasks to run commands and processes locally",
-            "time": "2016-04-22 14:17:40"
+            "time": "2016-04-25 15:18:22"
         },
         {
             "name": "mashbo/mashbot-taskrunner",
@@ -46,12 +46,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mashbo/mashbot-taskrunner.git",
-                "reference": "ea6e7fcefeb6ed6c2ca84ece65f575221b330b82"
+                "reference": "8ff906d5abe503c27b2ac1949d5194cbe8563805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mashbo/mashbot-taskrunner/zipball/ea6e7fcefeb6ed6c2ca84ece65f575221b330b82",
-                "reference": "ea6e7fcefeb6ed6c2ca84ece65f575221b330b82",
+                "url": "https://api.github.com/repos/Mashbo/mashbot-taskrunner/zipball/8ff906d5abe503c27b2ac1949d5194cbe8563805",
+                "reference": "8ff906d5abe503c27b2ac1949d5194cbe8563805",
                 "shasum": ""
             },
             "require": {
@@ -81,7 +81,7 @@
                 "source": "https://github.com/Mashbo/mashbot-taskrunner/tree/master",
                 "issues": "https://github.com/Mashbo/mashbot-taskrunner/issues"
             },
-            "time": "2016-04-22 10:30:35"
+            "time": "2016-04-22 16:03:11"
         },
         {
             "name": "phpseclib/phpseclib",

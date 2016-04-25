@@ -8,15 +8,12 @@ class RunSshCommand
 {
     public function __invoke(TaskContext $context, $connection, $command)
     {
-        $userAtHost = escapeshellarg($connection['user'] . '@' . $connection['host']);
-        $port = $connection['port'];
-        
         return $context
             ->taskRunner()
             ->invoke(
-                'process:run',
+                'process:command:run',
                 [
-                    'command' => sprintf("ssh %s -p %d %s", $userAtHost, $port, escapeshellarg($command))
+                    'command' => $context->taskRunner()->invoke('ssh:command:build', $context->arguments())
                 ]
             );
     }
