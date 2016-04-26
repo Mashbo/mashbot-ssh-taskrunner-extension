@@ -9,12 +9,14 @@ class BuildSshCommand
     public function __invoke(TaskContext $context, $connection, $command)
     {
         $userAtHost = escapeshellarg($connection['user'] . '@' . $connection['host']);
-        $port = $connection['port'];
-        
+
+        $portSpec = array_key_exists('port', $connection)
+            ? " -p " . intval($connection['port'])
+            : '';
+
         return $context->taskRunner()->invoke(
-            'process:command:build',
-            [
-                'command' => sprintf("ssh %s -p %d %s", $userAtHost, $port, escapeshellarg($command))
+            'process:command:build', [
+                'command' => sprintf("ssh %s%s %s", $userAtHost, $portSpec, escapeshellarg($command))
             ]
         );
     }
