@@ -12,7 +12,7 @@
             "source": {
                 "type": "git",
                 "url": "ssh://git@gitlab.mashbo.com:5339/mashbot/process-taskrunner-extension.git",
-                "reference": "735aab0aad61cf30f21e429d53f5a3184a0cdab0"
+                "reference": "6d0f1c7a6afc8b598235edeb585e8e56344b0c2f"
             },
             "require": {
                 "mashbo/mashbot-taskrunner": "*@dev",
@@ -38,7 +38,7 @@
                 }
             ],
             "description": "Provide tasks to run commands and processes locally",
-            "time": "2016-04-25 15:18:22"
+            "time": "2016-04-26 10:36:07"
         },
         {
             "name": "mashbo/mashbot-taskrunner",
