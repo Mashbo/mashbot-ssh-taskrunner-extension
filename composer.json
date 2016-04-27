@@ -4,7 +4,6 @@
     "require": {
         "mashbo/mashbot-taskrunner": "*@dev",
         "mashbo/mashbot-process-taskrunner-extension": "*@dev",
-        "phpseclib/phpseclib": "~2.0",
         "symfony/process": "~3.0"
     },
     "autoload": {
